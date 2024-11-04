@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* Root Colors */
+        :root {
+            --color: #000;
+            --color2: #fff;
+            --button: #391053;
+            --button1: #5a2675;
+            --dark-purple: #391053;
+            --purple3: #9d72b3;
+            --purple4: #c9a8f1;
+        }
+
+        /* Reset and Body Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: var(--color2);
+            color: var(--color);
+            overflow: hidden;
+        }
+
+        /* Container */
+        .coming-soon {
+            text-align: center;
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Heading and Subheading */
+        .coming-soon h1 {
+            font-size: 2.5rem;
+            color: var(--dark-purple);
+        }
+
+        .coming-soon p {
+            font-size: 1.2rem;
+            color: var(--purple3);
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Button */
+        .coming-soon button {
+            background: var(--button);
+            color: var(--color2);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .coming-soon button:hover {
+            background: var(--button1);
+        }
+
+        /* Illustration */
+        .illustration {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        /* Floating Animation */
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <!-- Illustration -->
+        <img src="img/coming .png" alt="Coming Soon Illustration" class="illustration">
+
+        <!-- Title and Message -->
+        <h1>Coming Soon</h1>
+        <p>We're working hard to bring you something amazing. Stay tuned!</p>
+
+        <!-- Notify Me Button -->
+        <button onclick="notifyMe()">Notify Me</button>
+    </div>
+
+    <script>
+        // JavaScript for Notify Button
+        function notifyMe() {
+            alert('Thank you! We will notify you when we launch.');
+        }
+    </script>
+</body>
+</html>
